@@ -24,7 +24,7 @@ public class BaseEntity {
 
     private Boolean isDeleted=false;
 
-    @PrePersist //before saving to the db
+    @PrePersist
     private void onPrePersist(){
         this.insertDateTime=LocalDateTime.now();
         this.lastUpdateDateTime=LocalDateTime.now();
@@ -32,9 +32,9 @@ public class BaseEntity {
         this.lastUpdateUserId=1L;
     }
 
-    @PreUpdate //before updating in the db
+    @PreUpdate
     private void onPreUpdate(){
-        this.lastUpdateDateTime=LocalDateTime.now();
+        this.lastUpdateDateTime= LocalDateTime.now();
         this.lastUpdateUserId=1L;
     }
 
