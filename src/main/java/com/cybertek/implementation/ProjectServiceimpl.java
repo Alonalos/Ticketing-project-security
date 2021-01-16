@@ -64,7 +64,6 @@ public class ProjectServiceimpl implements ProjectService {
         projectRepository.save(convertedProject);
     }
 
-    @Override
     public void delete(String code) {
         Project project=projectRepository.findByProjectCode(code);
         project.setIsDeleted(true);

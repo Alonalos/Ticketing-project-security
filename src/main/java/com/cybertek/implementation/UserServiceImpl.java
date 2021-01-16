@@ -39,7 +39,6 @@ public class UserServiceImpl implements UserService {
         return list.stream().map(obj -> mapperUtil.convert(obj,new UserDTO())).collect(Collectors.toList());
     }
 
-    @Override
     public UserDTO findByUserName(String username) {
         User user = userRepository.findByUserName(username);
         return mapperUtil.convert(user,new UserDTO());
