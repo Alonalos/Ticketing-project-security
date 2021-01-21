@@ -27,7 +27,7 @@ public class User  extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private Gender gender;
 
-    @ManyToOne (fetch = FetchType.LAZY) //many users can be assigned to one role
+    @ManyToOne  //many users can be assigned to one role
     @JoinColumn(name="role_id")
     private Role role;
 

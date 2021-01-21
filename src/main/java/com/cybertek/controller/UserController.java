@@ -32,7 +32,7 @@ public class UserController {
     }
 
     @PostMapping("/create")
-    public String insertUser(UserDTO user,Model model){
+    public String insertUser(UserDTO user){
         userService.save(user);
         return "redirect:/user/create";
     }
@@ -49,7 +49,7 @@ public class UserController {
     }
 
     @PostMapping("/update/{username}")
-    public String updateUser(@PathVariable("username") String username,UserDTO user,Model model){
+    public String updateUser(@PathVariable("username") String username,UserDTO user){
         userService.update(user);
         return "redirect:/user/create";
     }
