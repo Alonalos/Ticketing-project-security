@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cybertek</groupId>
-	<artifactId>SpringMVC-ProjectManagement</artifactId>
+	<artifactId>Ticketing-project-security</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringMVC-ProjectManagement</name>
-	<description>Demo ProjectManagement for Spring Boot</description>
+	<name>Ticketing-project-security</name>
+	<description>Ticketing-project-security for Spring Boot</description>
 
 	<properties>
 		<java.version>11</java.version>
