@@ -27,9 +27,10 @@ public class User  extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private Gender gender;
 
-    @ManyToOne  //many users can be assigned to one role
-    @JoinColumn(name="role_id")
+    @ManyToOne
+    @JoinColumn(name = "role_id")
     private Role role;
+
 
 
 }
